@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    width: auto;
+    /* width: auto; */
+    max-width: 1200px;
     margin: 40px auto;
     padding: 30px;
     background-color: #3c404d; 
@@ -28,7 +29,7 @@ h1 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
@@ -51,12 +52,12 @@ h1 {
 .card img {
     width: 100%;
     height: auto;
-    visibility: hidden; /* Hide images by default */
+    visibility: hidden; 
     display: block;
 }
 
 .card.show img {
-    visibility: visible; /* Show image when card is flipped */
+    visibility: visible; 
 }
 
 #start-game {
@@ -71,6 +72,6 @@ h1 {
 }
 
 #start-game:hover {
-    background-color: #43a047; /* Darker on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    background-color: #43a047; 
+    transform: scale(1.05);
 }
